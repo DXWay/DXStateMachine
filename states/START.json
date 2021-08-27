@@ -1,0 +1,53 @@
+{
+  "actionsBeforeInput": [
+    {
+      "type": "MSG",
+      "content": "Choose between Hi:"
+    }
+  ],
+
+  "waitingForClientResponse": true,
+  "responseDetail": {
+    "type": "CHOICE",
+    "choices": [
+      {
+        "id": 1,
+        "description": "Evolve into new states"
+      },
+      {
+        "id": 2,
+        "description": "Use external function"
+      },
+      {
+        "id": 3,
+        "description": "Use the input of the user"
+      }
+    ]
+  },
+
+  "onResponse":{
+    "type": "IF",
+    "responses":[
+      {
+        "inputValue": "1",
+        "type": "GOTO",
+        "newState": "PASS_TO_A_NEW_STATE"
+      },
+      {
+        "inputValue": "2",
+        "type": "GOTO",
+        "newState": "USE_EXTERNAL_FUNCTION"
+      },
+      {
+        "inputValue": "3",
+        "type": "GOTO",
+        "newState": "USE_KEYBOARD_INPUT"
+      },
+      {
+        "inputValue": "#",
+        "type": "GOTO",
+        "newState": "START"
+      }
+    ]
+  }
+}

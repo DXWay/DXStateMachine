@@ -1,0 +1,13 @@
+{
+  "actionsBeforeInput": [
+    {
+      "type": "MSG",
+      "content": "🥶\n==============\n"
+    }
+  ],
+  "waitingForClientResponse": false,
+  "onResponse":{
+    "type": "GOTO",
+    "newState": "START"
+  }
+}

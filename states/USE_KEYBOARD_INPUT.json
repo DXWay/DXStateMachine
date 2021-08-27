@@ -1,0 +1,16 @@
+{
+    "actionsBeforeInput": [
+      {
+        "type": "MSG",
+        "content": "Comment tu t appelle?"
+      }
+    ],
+    "waitingForClientResponse": true,
+    "responseDetail": {
+      "type": "STRING"
+    },
+    "onResponse":{
+      "type": "GOTO",
+      "newState": "DISPLAY_NAME"
+    }
+  }

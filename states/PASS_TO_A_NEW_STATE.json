@@ -1,0 +1,44 @@
+{
+  "actionsBeforeInput": [
+    {
+      "type": "MSG",
+      "content": "Do you like heat?"
+    }
+  ],
+
+  "waitingForClientResponse": true,
+  "responseDetail": {
+    "type": "CHOICE",
+    "choices": [
+      {
+        "id": 1,
+        "description": "Yes"
+      },
+      {
+        "id": 2,
+        "description": "No"
+      }
+    ]
+  },
+
+  "onResponse":{
+    "type": "IF",
+    "responses":[
+      {
+        "inputValue": "1",
+        "type": "GOTO",
+        "newState": "LIKE_HEAT"
+      },
+      {
+        "inputValue": "2",
+        "type": "GOTO",
+        "newState": "HATE_HEAT"
+      },
+      {
+        "inputValue": "#",
+        "type": "GOTO",
+        "newState": "PASS_TO_A_NEW_STATE"
+      }
+    ]
+  }
+}

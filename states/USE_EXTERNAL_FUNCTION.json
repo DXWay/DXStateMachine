@@ -1,0 +1,14 @@
+{
+  "actionsBeforeInput": [
+    {
+      "type": "MSG",
+      "content": "You ve chosen external function"
+    }
+  ],
+  "waitingForClientResponse": false,
+  "onResponse":{
+    "type": "FUNCTION",
+    "fileName": "externalFunction.js",
+    "functionName": "externalFunction"
+  }
+}

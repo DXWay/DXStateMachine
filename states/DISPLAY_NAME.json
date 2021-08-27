@@ -1,0 +1,13 @@
+{
+    "actionsBeforeInput": [
+      {
+        "type": "MSG",
+        "content": "Ton nom est {{USE_KEYBOARD_INPUT}}\n==============\n"
+      }
+    ],
+    "waitingForClientResponse": false,
+    "onResponse":{
+      "type": "GOTO",
+      "newState": "START"
+    }
+  }
