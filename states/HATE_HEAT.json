@@ -2,7 +2,7 @@
   "actionsBeforeInput": [
     {
       "type": "MSG",
-      "content": "🥶\n==============\n"
+      "content": "🥶"
     }
   ],
   "waitingForClientResponse": false,

@@ -21,6 +21,10 @@
       {
         "id": 3,
         "description": "Use the input of the user"
+      },
+      {
+        "id": 4,
+        "description": "Talk to an agent"
       }
     ]
   },
@@ -42,6 +46,11 @@
         "inputValue": "3",
         "type": "GOTO",
         "newState": "USE_KEYBOARD_INPUT"
+      },
+      {
+        "inputValue": "4",
+        "type": "GOTO",
+        "newState": "HANDOVER"
       },
       {
         "inputValue": "#",
