@@ -2,7 +2,7 @@
   "actionsBeforeInput": [
     {
       "type": "MSG",
-      "content": "Choose between:"
+      "content": "Choose between Hi:"
     }
   ],
 
