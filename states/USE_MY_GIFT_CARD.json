@@ -1,0 +1,57 @@
+{
+  "actionsBeforeInput": [
+    {
+      "type": "MSG",
+      "content": ""
+    }
+  ],
+
+  "waitingForClientResponse": true,
+  "responseDetail": {
+    "type": "CHOICE",
+    "choices": [
+      {
+        "id": 1,
+        "description": "Proposez-vous les cartes cadeaux ?"
+      },
+      {
+        "id": 2,
+        "description": "Où puis-je utiliser ma carte cadeau ?"
+      },
+      {
+        "id": 3,
+        "description": "Où renseigner ma carte cadeau sur le site ?"
+      },
+      {
+        "id": 4,
+        "description": "Retour à l'accueil"
+      }
+    ]
+  },
+
+  "onResponse":{
+    "type": "IF",
+    "responses":[
+      {
+        "inputValue": "1",
+        "type": "GOTO",
+        "newState": "DO_YOU_PROPOSE_GIFT_CARD"
+      },
+      {
+        "inputValue": "2",
+        "type": "GOTO",
+        "newState": "WHERE_I_CAN_USE_MY_GIFT_CARD"
+      },
+      {
+        "inputValue": "3",
+        "type": "GOTO",
+        "newState": "WHERE_I_SHOULD_PUT_MY_CARD_ON_THE_SITE"
+      },
+      {
+        "inputValue": "#",
+        "type": "GOTO",
+        "newState": "START"
+      }
+    ]
+  }
+}

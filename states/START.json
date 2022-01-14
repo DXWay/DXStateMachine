@@ -2,7 +2,7 @@
   "actionsBeforeInput": [
     {
       "type": "MSG",
-      "content": "Choose between:"
+      "content": "Que puis-je faire pour vous aider ? "
     }
   ],
 
@@ -12,19 +12,31 @@
     "choices": [
       {
         "id": 1,
-        "description": "Evolve into new states"
+        "description": "Idées cadeaux 🎁"
       },
       {
         "id": 2,
-        "description": "Use external function"
+        "description": "Utiliser ma carte cadeau 🔖"
       },
       {
         "id": 3,
-        "description": "Use the input of the user"
+        "description": "Retourner ma commande 🛃"
       },
       {
         "id": 4,
-        "description": "Talk to an agent"
+        "description": "Suivre ma commande 📦"
+      },
+      {
+        "id": 5,
+        "description": "Informations de livraison 🚚"
+      },
+      {
+        "id": 6,
+        "description": "Ma broderie personnalisée 🧵"
+      },
+      {
+        "id": 7,
+        "description": "Communiquer avec un agent 🛠"
       }
     ]
   },
@@ -35,20 +47,25 @@
       {
         "inputValue": "1",
         "type": "GOTO",
-        "newState": "PASS_TO_A_NEW_STATE"
+        "newState": "GIFT_IDEA"
       },
       {
         "inputValue": "2",
         "type": "GOTO",
-        "newState": "USE_EXTERNAL_FUNCTION"
+        "newState": "USE_MY_GIFT_CARD"
       },
       {
         "inputValue": "3",
         "type": "GOTO",
-        "newState": "USE_KEYBOARD_INPUT"
+        "newState": "RETURN_MY_COMMAND"
       },
       {
         "inputValue": "4",
+        "type": "GOTO",
+        "newState": "GET_THE_ORDER_STATUS"
+      },
+      {
+        "inputValue": "7",
         "type": "GOTO",
         "newState": "HANDOVER"
       },

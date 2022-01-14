@@ -1,0 +1,13 @@
+{
+  "actionsBeforeInput": [
+    {
+      "type": "MSG",
+      "content": "Nous vous proposons la carte cadeau valable pendant 1 an, sur le site et en boutique."
+    }
+  ],
+  "waitingForClientResponse": false,
+  "onResponse":{
+    "type": "GOTO",
+    "newState": "SUB_STATE_TRANSITION"  
+  }
+}

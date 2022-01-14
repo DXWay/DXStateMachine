@@ -1,0 +1,10 @@
+{
+	"actionsBeforeInput": [
+	],
+	"waitingForClientResponse": false,
+	"onResponse":{
+		"type": "FUNCTION",
+		"fileName": "handover.js",
+		"functionName": "handover"
+	}
+}

@@ -1,0 +1,13 @@
+{
+  "actionsBeforeInput": [
+    {
+      "type": "MSG",
+      "content": "Nous sommes absolument désolés de votre expérience. Vous pouvez vous rendre directement dans le magasin dans lequel vous l'avez acheté, en vous munissant de votre ticket de caisse."
+    }
+  ],
+  "waitingForClientResponse": false,
+  "onResponse":{
+    "type": "GOTO",
+    "newState": "SUB_STATE_TRANSITION_RETURN"  
+  }
+}

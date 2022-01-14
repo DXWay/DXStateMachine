@@ -1,0 +1,13 @@
+{
+  "actionsBeforeInput": [
+    {
+      "type": "MSG",
+      "content": "Si votre achat a été réalisé sur notre site internet il y a moins de 30 jours : Les retours sont offerts via Colissimo depuis la France et la plupart des pays de l'Union Européenne. Cliquez ici pour accéder à votre historique de commandes et retourner gratuitement votre colis."
+    }
+  ],
+  "waitingForClientResponse": false,
+  "onResponse":{
+    "type": "GOTO",
+    "newState": "SUB_STATE_TRANSITION_RETURN"  
+  }
+}

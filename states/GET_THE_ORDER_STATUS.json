@@ -2,7 +2,7 @@
     "actionsBeforeInput": [
       {
         "type": "MSG",
-        "content": "Comment tu t appelle?"
+        "content": "Afin d'obtenir votre statut de commande, veuillez saisir votre numéro de commande."
       }
     ],
     "waitingForClientResponse": true,
@@ -11,6 +11,6 @@
     },
     "onResponse":{
       "type": "GOTO",
-      "newState": "DISPLAY_NAME"
+      "newState": "FETCH_ORDER_STATUS"
     }
   }

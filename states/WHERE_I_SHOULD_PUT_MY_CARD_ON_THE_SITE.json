@@ -1,0 +1,13 @@
+{
+  "actionsBeforeInput": [
+    {
+      "type": "MSG",
+      "content": "Pour utiliser la carte cadeau sur le site, il vous suffit de renseigner le code présent sur celle-ci dans la rubrique \"J'ai un code avantage\" en haut à droite sur la page panier."
+    }
+  ],
+  "waitingForClientResponse": false,
+  "onResponse":{
+    "type": "GOTO",
+    "newState": "SUB_STATE_TRANSITION"  
+  }
+}

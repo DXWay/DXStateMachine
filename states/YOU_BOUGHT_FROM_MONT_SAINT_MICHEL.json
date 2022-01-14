@@ -1,0 +1,13 @@
+{
+  "actionsBeforeInput": [
+    {
+      "type": "MSG",
+      "content": "Vous pouvez renvoyer celui-ci à l'adresse suivante : \nMSM 1888\nPour Le Slip Français\nBoîte postale 18\n50170 Le Mont Saint Michel"
+    }
+  ],
+  "waitingForClientResponse": false,
+  "onResponse":{
+    "type": "GOTO",
+    "newState": "SUB_STATE_TRANSITION_RETURN"  
+  }
+}

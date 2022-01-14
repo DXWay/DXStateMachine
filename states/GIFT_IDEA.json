@@ -1,0 +1,46 @@
+{
+  "actionsBeforeInput": [
+    {
+      "type": "MSG",
+      "content": "Le Slip Français vous aide pour Noël !🎅 Quelles informations souhaitez-vous savoir ?"
+    }
+  ],
+
+  "waitingForClientResponse": true,
+  "responseDetail": {
+    "type": "CHOICE",
+    "choices": [
+      {
+        "id": 1,
+        "description": "Toutes nos idées cadeaux 🎁"
+      },
+      {
+        "id": 2,
+        "description": "Les coffrets 🧦"
+      },
+      {
+        "id": 3,
+        "description": "Le top 20 ⭐"
+      },
+      {
+        "id": 4,
+        "description": "Les petits budgets 💸"
+      },
+      {
+        "id": 5,
+        "description": "Retour a l'acceuil"
+      }
+    ]
+  },
+
+  "onResponse":{
+    "type": "IF",
+    "responses":[
+      {
+        "inputValue": "#",
+        "type": "GOTO",
+        "newState": "START"
+      }
+    ]
+  }
+}

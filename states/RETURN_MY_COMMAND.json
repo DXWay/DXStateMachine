@@ -1,0 +1,65 @@
+{
+  "actionsBeforeInput": [
+    {
+      "type": "MSG",
+      "content": ""
+    }
+  ],
+
+  "waitingForClientResponse": true,
+  "responseDetail": {
+    "type": "CHOICE",
+    "choices": [
+      {
+        "id": 1,
+        "description": "Vous avez acheté chez nous"
+      },
+      {
+        "id": 2,
+        "description": "Vous avez acheté chez l'un de nos revendeurs"
+      },
+      {
+        "id": 3,
+        "description": "Vous avez acheté chez notre revendeur du Mont Saint-Michel, le Mont Saint-Slip"
+      },
+      {
+        "id": 4,
+        "description": "J'ai perdu mon bon de livraison"
+      },
+      {
+        "id": 5,
+        "description": "En savoir plus sur les remboursements"
+      },
+      {
+        "id": 6,
+        "description": "Retour à l'accueil"
+      }
+    ]
+  },
+
+  "onResponse":{
+    "type": "IF",
+    "responses":[
+      {
+        "inputValue": "1",
+        "type": "GOTO",
+        "newState": "YOU_BOUGHT_FROM_US"
+      },
+      {
+        "inputValue": "2",
+        "type": "GOTO",
+        "newState": "YOU_BOUGHT_FROM_RESELLER"
+      },
+      {
+        "inputValue": "3",
+        "type": "GOTO",
+        "newState": "YOU_BOUGHT_FROM_MONT_SAINT_MICHEL"
+      },
+      {
+        "inputValue": "#",
+        "type": "GOTO",
+        "newState": "START"
+      }
+    ]
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "actionsBeforeInput": [
+    {
+      "type": "MSG",
+      "content": "."
+    }
+  ],
+
+  "waitingForClientResponse": true,
+  "responseDetail": {
+    "type": "CHOICE",
+    "choices": [
+      {
+        "id": 1,
+        "description": "Retour en arrière"
+      },
+      {
+        "id": 2,
+        "description": "Retour a l'acceuil"
+      }
+    ]
+  },
+
+  "onResponse":{
+    "type": "IF",
+    "responses":[
+      {
+        "inputValue": "1",
+        "type": "GOTO",
+        "newState": "USE_MY_GIFT_CARD"
+      },
+      {
+        "inputValue": "#",
+        "type": "GOTO",
+        "newState": "START"
+      }
+    ]
+  }
+}
